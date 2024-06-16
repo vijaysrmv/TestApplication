@@ -1,0 +1,244 @@
+table {
+    border-collapse: separate;
+}
+.w-0 {
+    width: 0%;
+}
+.w-10 {
+    width: 10%;
+}
+.w-40 {
+    width: 40%;
+}
+.imageLeftDiv {
+    display: block;
+    margin: auto;
+    margin-top: 0px;
+    width: auto !important;
+}
+.loginRightDiv {
+    border-radius: 3px;
+    background-color: #ffffff;
+    padding: 10px 50px;
+    position: relative;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(152,152,152,0.5);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(152,152,152,0.5);
+    box-shadow: 0px 0px 5px 1px rgba(152,152,152,0.5);
+}
+.bottomtext {
+    width: 60% !important;
+    position: absolute;
+    bottom: 20px;
+    left: 5%;
+    right: 0px;
+}
+.text-footer {
+    font: 8pt Arial;
+    color: black;
+}
+.bg-color {
+    background-color: #ebebeb;
+}
+.login-heading {
+    font-family: sans-serif;
+    font-size:16px;
+    color:#6D6D6D;
+    border-bottom: 4px solid #97D3FF;
+    padding-bottom:3px;
+    font-weight:bold;
+}
+.group {
+    position: relative;
+    margin-bottom: 15px;
+}
+.inputborder {
+    float: right;
+    border: 1px #dadada solid;
+    border-radius: 3px;
+}
+.imageborder{
+    border-right:1px #dadada solid;
+}
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+.bar {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.bar:before, .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #4a89dc;
+    -webkit-transition:all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.bar:before {
+    left: 50%;
+}
+.bar:after {
+    right: 50%;
+}
+.inputlogin {
+    font-size: 14px;
+    padding: 6px 10px 7px 17px;
+    color: #636363;
+    box-sizing:border-box;
+    border: none;
+    font-weight:600;
+    font-family:sans-serif;
+}
+.inputlogin:focus {
+    outline: none;
+}
+.inputlogin:focus ~ .bar:before, .inputlogin:focus ~ .bar:after {
+    width: 50%;
+}
+.inputlogin:focus ~ .highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
+}
+.userlabel {
+    color: #9E9E9E !important;
+    font-size: 14px !important;
+    font-weight: 400;
+    position: absolute;
+    pointer-events: none;
+    left: 48px;
+    top: 5px;
+    -webkit-transition:all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.captchabg {
+    background: url('../images/captchabg.jpg');
+    text-align: center;
+    border: 1px #A9A9A9 solid;
+    border-radius: 3px;
+}
+.loginbuttonstyle {
+    font-size:14px;
+    width: 100%;
+    height:35px;
+    background-color:#0072C6;
+    cursor: pointer;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: 400;
+    padding: 0px 0px 0px 0px !important;
+    border-style : solid;
+    border-color : #dddddd;
+    border-width: 1px;
+    color: white;
+    border-radius:3px;
+}
+.forgot-password-label-style {
+    font-size:13px;
+    cursor: pointer;
+    font-weight: bold;
+    padding-right: 3px;
+    text-decoration: underline;
+}
+.forgot-password-label-style:hover {
+    color: red;
+}
+.otpmessage {
+    text-align: left;
+    color: #6D6D6D;
+    font-weight: bold;
+    display: inline-block;
+    padding: 4px;
+    font-size: 13px;
+    font-family: sans-serif;
+    line-height: 1.4;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+.otpmessageerror {
+    text-align: left;
+    color: #c40505;
+    display: inline-block;
+    padding: 4px;
+    font-size: 13px;
+    font-family: Open Sans;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+.errorDiv {
+    margin-bottom:5px;
+    border:1px solid #e9a9a9;
+    border-radius:3px;
+    background-color: #f7f7f7;
+    width:100%;
+    height: 26px;
+    line-height: 26px;    
+    text-align: left;
+}
+.messagediv {
+    padding:4px;
+    font-size:13px;
+    font-family:sans-serif;
+    color: #c40505;
+    text-align:center;
+    display: inline-block;
+    line-height:1.4;
+}
+/************Change Password Styles************/
+.cpMainDiv {
+    display: flex;
+    min-height: 100%;
+    align-items: center;
+    justify-content: center;
+    /*background-color: #f9f9f9;*/
+    font-family: sans-serif;
+}
+.cpCardStyle {
+    width: 500px;
+    border-color: white;
+    background: #fff;
+    padding: 36px 0;
+    border-radius: 4px;
+    margin: 30px 0;
+    box-shadow: 0px 0 2px 0 rgba(0,0,0,0.25);
+}
+#signupLogo {
+    max-height: 100px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.cpFormTitle{
+    font-weight: 600;
+    margin-top: 20px;
+    color: #2F2D3B;
+    text-align: center;
+}
+.cpInputLabel {
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 6px;
+    margin-top: 10px;
+}
+.cpInputDiv {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.cpInput {
+    height: 30px;
+    font-size: 13px;
+    border-radius: 4px;
+    /*border: none;*/
+    border: solid 1px #ccc;
+    padding: 0 11px;
+}

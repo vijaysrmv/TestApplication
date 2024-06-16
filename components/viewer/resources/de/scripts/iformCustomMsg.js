@@ -1,0 +1,6 @@
+
+if(!customMsgJSON){
+    var customMsgJSON = {
+        
+    };
+}

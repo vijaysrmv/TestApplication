@@ -1,0 +1,9 @@
+<ReleaseProperty>
+	<Product>iBPS 5.0</Product>
+	<ServicePack>SP3</ServicePack>
+	<Patch>01</Patch>
+	<Hotfix>iBPS_5.0_SP3_01_000</Hotfix>
+	<date_of_build>13-08-2023</date_of_build>
+	<build_person>aamir.akhtar@newgensoft.com</build_person>
+	<label>5.0_SP3_P1_11-08-2023_CBL_09</label>
+</ReleaseProperty>

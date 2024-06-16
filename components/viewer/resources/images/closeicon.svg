@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Close</title>
+    <g id="Close" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Group-2" transform="translate(1.000000, 0.000000)" stroke="#000000" stroke-width="1.5">
+            <g id="Group" transform="translate(0.051583, 0.840122)">
+                <line x1="-1.89288276" y1="9.06578947" x2="19.6831781" y2="9.1495258" id="Line-7" transform="translate(9.000000, 9.000000) rotate(45.000000) translate(-9.000000, -9.000000) "></line>
+                <line x1="-1.89288276" y1="9.06578947" x2="19.6831781" y2="9.1495258" id="Line-7" transform="translate(9.000000, 9.000000) scale(-1, 1) rotate(45.000000) translate(-9.000000, -9.000000) "></line>
+            </g>
+        </g>
+    </g>
+</svg>

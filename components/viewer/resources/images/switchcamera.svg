@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Camera  Flip</title>
+    <g id="Camera--Flip" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" fill="#F1F1F4" cx="18" cy="18" r="18"></circle>
+        <g id="Group" transform="translate(5.000000, 7.000000)">
+            <path d="M12.7760133,21.0648148 C7.55722144,21.0648148 3.22495507,17.2691479 2.38923581,12.2878358 L4.17448407,12.2873406 C4.98752852,16.2938213 8.52960625,19.3094136 12.7760133,19.3094136 C17.0224204,19.3094136 20.5644981,16.2938213 21.3775425,12.2873406 L23.1627908,12.2878358 C22.3270715,17.2691479 17.9948052,21.0648148 12.7760133,21.0648148 Z M12.7760133,0 C17.9949002,0 22.3272293,3.7958051 23.1628365,8.77725112 L21.3775425,8.77747419 C20.5644981,4.77099354 17.0224204,1.75540123 12.7760133,1.75540123 C8.52960625,1.75540123 4.98752852,4.77099354 4.17448407,8.77747419 L2.38919016,8.77725112 C3.2247973,3.7958051 7.55712641,0 12.7760133,0 Z" id="Combined-Shape-Copy" fill="#000000"></path>
+            <polyline id="Path-6-Copy-3" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(22.087056, 8.235009) rotate(-15.000000) translate(-22.087056, -8.235009) " points="19.4539539 6.47960733 22.0870558 9.9904098 24.7201576 6.47960733"></polyline>
+            <polyline id="Path-6-Copy-4" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(3.372411, 12.788678) scale(-1, -1) rotate(-15.000000) translate(-3.372411, -12.788678) " points="0.739308658 11.0332767 3.37241051 14.5440792 6.00551236 11.0332767"></polyline>
+        </g>
+        <path d="M18.914617,14.5 L17.085383,14.5 L16.485383,15.75 L14.5,15.75 L14.5,20.5 L21.5,20.5 L21.5,15.75 L19.514617,15.75 L18.914617,14.5 Z" id="Path-3-Copy" stroke="#000000" stroke-linejoin="round"></path>
+        <circle id="Oval" fill="#000000" cx="18" cy="18" r="1"></circle>
+    </g>
+</svg>

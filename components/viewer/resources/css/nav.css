@@ -1,0 +1,813 @@
+/* 
+    Document   : nav
+    Created on : Jul 8, 2019, 4:14:44 PM
+    Author     : g.sharma
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(../bootstrap/fonts/mem5YaGs126MiZpBA-UNirkOX-hpOqc.woff2) format('woff2');
+  
+}
+.disableList {
+    pointer-events:none;
+}
+.navigationContainer {
+    width: 100%;
+}
+.stepNavigationContainerParent {
+    padding-bottom:8px;
+    padding-top:8px;
+}
+.navigationProgressBar {
+    counter-reset: step;
+}
+.navigationProgressBar li {
+    list-style-type: none;
+    float: left;
+    font-size: 12px;
+    position: relative;
+    text-align: center;
+/*    text-transform: uppercase;*/
+    color:white;
+    right:1%;
+}
+
+@media (max-width: 500px){
+    .navigationProgressBar li {
+        right : 2%;
+    }
+}
+@media (max-width: 400px){
+    .navigationProgressBar li {
+        right : 7%;
+    }
+}
+@media (max-width: 320px){
+    .navigationProgressBar li {
+        right : 9%;
+    }
+}
+@media (max-width: 254px){
+    .navigationProgressBar li {
+        right : 10%;
+    }
+}
+
+@media (max-width: 4000px){
+    .navSavBtn{
+        width: 60px;
+    }
+    .fragmentFooter{
+    height: 60px;
+    padding-top: 10px;
+    /*padding-bottom: 14px;*/
+    text-align: right;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-right: 0px;
+    /*border-bottom: 1px solid #d7d7d7;*/
+    border-left: 1px solid #d7d7d7;
+}
+.navSelection{
+    border-radius: 3px;
+    height:40px;
+    width:155px;
+    float:left;
+    margin-right:2%;
+    /*color:#000000 !important;*/
+    font-weight: 600;
+    font-family: Open Sans,sans-serif ;
+    font-size: 16px;
+    /*background: #E8E8E8 !important;*/
+}
+    .navigationNextBtn{
+    background: #0072C6;
+    font-size: 16px;
+    border-radius: 3px;
+    height:40px;
+    width:147px;
+    /*color:#FFFFFF !important;*/
+    font-weight: 600;
+    font-family: Open Sans,sans-serif ;
+}
+.navigationContinueBtn{
+    border: 1px solid #0072C6;
+    border-radius: 3px;
+    color : #0072C6;
+    width: 199px;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Open Sans,sans-serif ;
+/*    margin-right: 2%;*/
+    /*background: #FFFFFF !important;*/
+}
+.navigationBackBtn{
+    background: #E8E8E8;
+    border-radius: 3px;
+    margin-right:8px;
+    height:40px;
+    width:87px;
+    pointer-events: none;
+    cursor: auto;
+    box-shadow: none;
+    opacity: .50;
+    color: #2E2E2E;
+    font-size: 16px;
+    float: left;
+    font-weight: 600;
+    font-family: Open Sans,sans-serif;
+}
+}
+@media (max-width: 900px){
+    .navigationNextBtn{
+    height:35px;
+    width:100px;
+	padding:5px;
+}
+.navSelection{
+    height:35px;
+    width:114px;
+	padding:5px;
+}
+.navigationContinueBtn{
+    width: 199px;
+    height: 35px;
+	padding:5px;
+}
+.navigationBackBtn{
+    height:35px;
+    width:89px;
+	padding:5px;
+}
+}
+@media (max-width: 700px){
+    .fragmentFooter{
+        padding-left:5px;
+        padding-right:5px;
+        height:55px;
+    }
+    .navigationNextBtn{
+    height:35px;
+    width:100px;
+	padding:0px;
+}
+.navSelection{
+    height:35px;
+    width:114px;
+	padding:2px;
+}
+.navigationContinueBtn{
+    width: 178px;
+    height: 35px;
+	padding:2px;
+	overflow:hidden;
+}
+.finishBtn{
+    width: 83px !important;
+}
+.navigationBackBtn{
+    height:35px;
+    width:76px;
+	padding:0px;
+}
+}
+
+/*.navigationProgressBar li:before {
+    width: 32px;
+    height: 32px;
+    content: counter(step);
+    counter-increment: step;
+    line-height: 30px;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+    background-color: #e8e8e8;
+    color:#2e2e2e;
+}*/
+.navigationProgressBar li:after {
+    width: 100%;
+    height: 4px;
+    content: '';
+    position: absolute;
+    background-color: #e8e8e8;
+    top: 15px;
+    left: -50%;
+    z-index: 0 !important;
+}
+.navigationProgressBar li:first-child:after {
+    content: none;
+}
+.navigationProgressBar li.active {
+    color: #2e2e2e;
+}
+.navigationProgressBar li .outerCircle{
+    width: 50px;
+    height: 50px;
+}
+.navigationProgressBar li .remainingProgressSegment{
+    width: 50px;
+    height: 50px;
+    display:none;
+    border:5px solid;
+    border-radius: 50%;
+    position: absolute;
+    left: calc(50% - 25px);
+    top: -7px;
+}
+.navigationProgressBar li .completedProgressSegmentFirst50{
+    width: 50px;
+    height: 50px;
+    display:none;
+    border-radius: 50%;
+    position: absolute;
+    border:5px solid;
+    left: 0px;
+    clip: rect(0,50px,50px,25px);
+}
+
+.navigationProgressBar li.active.over50 .completedProgressSegmentFirst50{
+    display: block;
+}
+.navigationProgressBar li .left-half-clipper{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    clip: rect(0,50px,50px,25px);
+    left: calc(50% - 25px);
+    top: -7px;
+}
+.navigationProgressBar li.active.over50 .left-half-clipper{
+    clip: rect(auto,auto,auto,auto);
+}
+
+.navigationProgressBar li .completedProgressSegmentValueBar{
+    width: 50px;
+    height: 50px;
+    display:none;
+    border-radius: 50%;
+    position: absolute;
+    border:5px solid;
+    left: 0px;
+    clip: rect(0,25px,50px,0);
+    transform:rotate(0deg);
+}
+.navigationProgressBar li .innerCircle{
+    width: 36px;
+    height: 36px;
+    line-height: 30px;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+    background-color: #e8e8e8;
+    color:#2e2e2e;
+    font-size: 14px;
+}
+/*.innerCircle .progressBarText{
+    color:black;
+    position:relative;
+    top:19%;
+    transform: translate(0,-19%);
+}*/
+.navigationProgressBar li.completed .innerCircle .progressBarText{
+    color:white;
+    z-index:1;
+}
+/*.navigationProgressBar li.active .innerCircle .progressBarText{
+    color:white;
+}*/
+
+.navigationProgressBar li.active .remainingProgressSegment{
+    border:5px solid;
+    display:inline-block;  
+}
+.navigationProgressBar li.active .completedProgressSegmentValueBar{
+    border:5px solid;
+    display:inline-block;
+}
+
+
+
+.navigationProgressBar li.active .innerCircle{
+    color:white;
+}
+/*.navigationProgressBar li.active:before {
+    border-color: #a75b1b;
+    background-color:#a75b1b;
+    color:white;
+}
+.navigationProgressBar li.active + li:after {
+    background-color: #a75b1b;
+}*/
+
+.verticalNavigationContainer {
+    font-size: 12px;
+}
+
+.verticalNavigationProgressBar {
+    position: relative;
+    padding-left: 30px;
+    list-style: none;
+}
+
+.verticalNavigationProgressBar:before {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    top: 13px;
+    left: 15px;
+    width: 10px;
+    height: 100%;
+    border-left: 4px solid #E8E8E8;
+}
+
+.verticalNavigationProgressBar-item {
+    position: relative;
+    counter-increment: list;
+}
+
+.verticalNavigationProgressBar-item .menuLabel{
+    position: relative;
+    top: 15px;
+    left: 5px;
+    font-style: normal;
+    color: #6B6B6B; 
+}
+
+.verticalNavigationProgressBar-item:not(:last-child) {
+    min-height: 51px;
+}
+
+.verticalNavigationProgressBar-item:before {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    left: -14px;
+    height: 100%;
+    width: 10px;
+    top:14px;
+}
+
+/*.verticalNavigationProgressBar-item:after {
+    content: counter(list);
+    display: inline-block;
+    position: absolute;
+    padding-top: 3px;
+    top: 0;
+    left: -41px;
+    width: 26px;
+    height: 26px;
+    text-align:center;
+    border-radius: 50%;
+    background-color: white;
+}*/
+.verticalNavigationProgressBar-item.current .outerCircle{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: -22px;
+    width: 18px;
+    height: 0px;
+    text-align:center;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.verticalNavigationProgressBar-item .current .menuLabel{
+    color:#000000;
+    font-weight: Normal;
+}
+
+.verticalNavigationProgressBar-item .current{
+    color:#6B6B6B;
+    font-weight: Normal;
+}
+.verticalNavigationProgressBar-item .outerCircle{
+    display: inline-block;
+    position: absolute;
+    left: -22px;
+    width: 18px;
+    height: 18px;
+    text-align:center;
+    border-radius: 50%;
+    background-color: white;
+    top:7px;
+    margin-top:6px;
+}
+.verticalNavigationProgressBar-item .remainingProgressSegment{
+    width: 50px;
+    height: 50px;
+    display:none;
+    border:5px solid;
+    border-radius: 50%;
+    position: absolute;
+    left: calc(50% - 25px);
+}
+.verticalNavigationProgressBar-item .completedProgressSegmentFirst50{
+    width: 50px;
+    height: 50px;
+    display:none;
+    border-radius: 50%;
+    position: absolute;
+    border:5px solid;
+    left: 0px;
+    clip: rect(0,50px,50px,25px);
+}
+
+.verticalNavigationProgressBar-item.current.over50 .completedProgressSegmentFirst50{
+    display: block;
+}
+.verticalNavigationProgressBar-item .left-half-clipper{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    clip: rect(0,50px,50px,25px);
+    left: calc(50% - 25px);
+}
+.verticalNavigationProgressBar-item.current.over50 .left-half-clipper{
+    clip: rect(auto,auto,auto,auto);
+}
+
+.verticalNavigationProgressBar-item .completedProgressSegmentValueBar{
+    width: 50px;
+    height: 50px;
+    display:none;
+    border-radius: 50%;
+    position: absolute;
+    border:5px solid;
+    left: 0px;
+    clip: rect(0,25px,50px,0);
+    transform:rotate(0deg);
+}
+.verticalNavigationProgressBar-item .innerCircle{
+    width: 18px;
+    height: 18px;
+    line-height: 30px;
+    display: block;
+    text-align: center;
+    margin: 0px auto 10px auto;
+    border-radius: 50%;
+    background-color: #e8e8e8;
+    color:#2e2e2e;
+    font-size: 14px;
+    position: relative;
+}
+.verticalNavigationProgressBar-item.current .innerCircle{
+    top: 7px;
+    color:white;
+}
+
+.verticalNavigationProgressBar-item.li.completed .innerCircle .progressBarText{
+    color:white;
+}
+.verticalNavigationProgressBar-item.current .innerCircle .progressBarText{
+    color:white;
+}
+.verticalNavigationProgressBar-item.completed .innerCircle .progressBarText{
+    color:white;
+}
+.verticalNavigationProgressBar-item.current .remainingProgressSegment{
+    border:5px solid;
+    display:inline-block;
+}
+.verticalNavigationProgressBar-item.current .completedProgressSegmentValueBar{
+    border:5px solid;
+    display:inline-block;
+}
+
+.verticalNavigationProgressBar-item.is-done:before {
+
+    border-left: 2px solid green;
+}
+.verticalNavigationProgressBar-item.is-done:after {
+    content: "✔";
+    font-size: 10px;
+    color: #FFF;
+    text-align: center;
+    border: 2px solid green;
+    background-color: green;
+}
+
+
+
+/*.verticalNavigationProgressBar-item.current:after {
+    content: counter(list);
+    width: 26px;
+    height: 26px;
+    top: 0px;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+}*/
+.verticalNavigationContainerParent .active .menuLabel{
+    font-weight:bold;
+    word-wrap: break-word;
+}
+
+/*.verticalNavigationContainerParent .current .menuLabel{
+    font-weight:bold;
+    word-wrap: break-word;
+    color: #0072c6;
+}*/
+
+.verticalNavigationContainerParent .completed .menuLabel{
+    font-weight:normal;
+    word-wrap: break-word;
+    color: #000000;
+}
+
+.stepNavigationContainerParent .active .menuLabel{
+/*    font-weight:bold;*/
+    word-wrap: break-word;
+}
+.stepNavigationContainerParent .current .menuLabel{
+/*    font-weight:bold;*/
+    word-wrap: break-word;
+}
+.stepNavigationContainerParent .menuLabel{
+    color:#2e2e2e;
+    word-wrap: break-word;
+
+}
+@media only screen and (max-width: 1001px) {
+    .stepNavigationContainerParent .menuLabel{
+        color:#2e2e2e;
+        word-wrap: break-word;
+        display: block; 
+        overflow: hidden; 
+        white-space: nowrap; 
+        text-overflow: ellipsis;
+    }
+    .stepNavigationContainerParent .active .menuLabel{
+/*        font-weight:bold;*/
+        word-wrap: break-word;
+        display: block; 
+        overflow: hidden; 
+        white-space: nowrap; 
+        text-overflow: ellipsis;
+    }
+    .stepNavigationContainerParent .current .menuLabel{
+        font-weight:bold;
+        word-wrap: break-word;
+        display: block; 
+        overflow: hidden; 
+        white-space: nowrap; 
+        text-overflow: ellipsis;
+    }
+}
+
+.verticalNavigationContainerParent{
+    height:617px;
+    overflow-y: auto;
+    background: #f9f9f9;
+    padding: 16px 13px;
+    border-top: 1px solid #d7d7d7;
+    border-bottom: 1px solid #d7d7d7;
+    
+}
+
+.fragmentContainer1{
+    /*height:calc(100% - 69px);*/
+    padding:0px;
+    overflow-y:auto;
+    border: 1px solid #d7d7d7;
+    border-top: 1px solid #d7d7d7;
+    border-right: none !important;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.fragmentContainer{
+    /*height:calc(100% - 54px);*/
+    padding:0px;
+    overflow-y:auto;
+    border: 1px solid #d7d7d7;
+    border-top: 1px solid #d7d7d7;
+    border-right: none !important;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.fragmentContainerParent{
+    height:100%;
+    padding:0px;
+}
+
+
+
+.navigationContinueBtn:hover{
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.14);
+}
+
+
+
+.navSelection:hover{
+    color:white;
+}
+
+.verNavFragParent{
+    padding:0px 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.sideMenuNavigationBar{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow:auto;
+}
+.sideMenuChild {
+    position: relative; 
+    min-height:60px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.sideMenuChildWithChild {
+    position: relative; 
+    min-height:60px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.sideMenuNavigationBarParent{
+    height:650px;
+    background: #f5f5f5;
+    padding: 0px;
+    border-left:1px solid #d7d7d7;
+    border-bottom:1px solid #d7d7d7;
+    border-top:1px solid #d7d7d7;
+}
+.sideMenuChild .sideMenuSelectStatusBar{
+    display: inline-block;
+    width:8px;
+    height:100%;
+}
+
+.sideSubMenuChild .sideMenuChildSelectStatusBar{
+    display: inline-block;
+    width:8px;
+    height:100%;
+}
+/*.sideMenuChild.active{
+    background-color: #a75b1b;
+}*/
+.sideMenuChild.active .sideMenuSelectStatusBar{
+    /*background-color: #a75b1b;*/
+    display: inline-block;
+}
+.sideMenuChild .sideMenuChildData{
+    display: inline-block;
+    width: calc(100% - 8px);
+}
+
+.sideMenuChildContainer{
+    display: none;
+    width: 100%;
+    /*padding: 16px 8px;
+    background:white;
+    border-right:1px solid #d8d8d8;*/
+}
+.sideMenuChildWithChild.active .sideMenuChildContainer{
+    display: inline-block;   
+}
+.sideMenuChild .sideMenuLabelParent{
+    display: inline-block;
+    width: 100%;
+    padding: 21px 8px;
+    height:100%;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.sideSubMenuChild .sideMenuChildLabelParent{
+    display: inline-block;
+    width: calc(100% - 8px);
+    padding: 21px 8px 21px 24px;
+    font-size: 13px;
+}
+.sideSubMenuChild.active .sideMenuChildLabelParent{
+    background-color:white;
+}
+.sideMenuChild.active .sideMenuLabelParent{
+    background: white;
+    color:#0072c6;
+    font-weight: 800;
+}
+
+.sideMenuChildWithChild .sideMenuLabelParent{
+    display: inline-block;
+    width: 100%;
+    padding: 21px 8px 21px 16px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.navigationNextBtn:hover{
+    color:white;
+}
+
+/*.sideMenuChild.active .sideMenuLabelParent{
+    background-color: rgb(255, 224, 186);
+}*/
+
+.sideSubMenuChild{
+    min-height:30px;
+    font-size:12px;
+} 
+.sideSubMenuChild.active{
+    color:#0072c6;
+    font-weight: bolder;
+}
+
+.sideMenuChildNavigationBar{
+    list-style:none;
+    padding-left: 0px;
+}
+.sideSubMenuChild .subMenuArrow{
+    visibility: hidden;
+    padding-right: 5px;
+}
+.sideSubMenuChild.active .subMenuArrow{
+    visibility:visible;
+}
+.sideMenuChild.active .sideMenuItemDiv{
+    background-color: white;
+}
+[class*="dropdown-menu-tip-"]::after {
+  content: '';
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  background-color: #ECF5FB;
+  border: solid 0.5px #ccc;
+  border-bottom: none;
+  border-left: none;
+}
+
+.dropdown-menu-tip-nw::after {
+  top: calc(-.5rem - 1px);
+  right: 1rem;
+  transform: rotate(-45deg);
+}
+.stepName {
+    font-weight: 600;
+    font-family: Open Sans,sans-serif ;
+    font-size: 14px;
+    color: #003000;
+    text-align: center;
+    line-height: 19px;
+    padding-bottom: 8px;
+}
+.stepcolor{
+    color: #0072C6;
+}
+.menuLabelParent{
+    font-family: Open Sans,sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    color: #3E3E3E !important;
+    padding: 10px !important;
+}
+.menuButton{
+        background: #E8E8E8;
+    border-radius: 3px;
+    border: none;
+    width: 100px;
+    height: 32px;
+}
+.menuButtonSpan{
+    font-family: Open Sans,sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #2E2E2E;
+}
+.menuChildLabelParent{
+    font-family: Open Sans,sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    color: #3E3E3E !important;
+    padding: 10px !important;
+}
+.mobileMenuChildWithChild {
+    position: relative;
+    min-height: 60px;
+}
+.menuSelected{
+    background-color: #B4D4EF !important;
+}
+.limenuSelected{
+    background-color: #0072C6 !important;
+}
+.parentMenuItem{
+    border: none !important;
+    min-height: 0px !important;
+}

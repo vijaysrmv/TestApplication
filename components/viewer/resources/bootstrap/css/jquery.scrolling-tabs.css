@@ -1,0 +1,78 @@
+/**
+ * jquery-bootstrap-scrolling-tabs
+ * @version v2.4.0
+ * @link https://github.com/mikejacobson/jquery-bootstrap-scrolling-tabs
+ * @author Mike Jacobson <michaeljjacobson1@gmail.com>
+ * @license MIT License, http://www.opensource.org/licenses/MIT
+ */
+.scrtabs-tab-container * {
+  box-sizing: border-box; }
+
+.scrtabs-tab-container {
+  height: 38px; }
+  .scrtabs-tab-container .tab-content {
+    clear: left; }
+
+.scrtabs-tab-container.scrtabs-bootstrap4 .scrtabs-tabs-movable-container > .navbar-nav {
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+.scrtabs-tabs-fixed-container {
+  float: left;
+  height: 39px;
+  overflow: hidden;
+  width: 100%;
+  /*border-left: 2px solid transparent;
+    border-right: 2px solid transparent;*/
+}
+
+.scrtabs-tabs-movable-container {
+  position: relative; }
+  .scrtabs-tabs-movable-container .tab-content {
+    display: none; }
+
+/*.scrtabs-tab-container.scrtabs-rtl .scrtabs-tabs-movable-container > ul.nav-tabs {
+  padding-right: 0; }*/
+
+.scrtabs-tab-scroll-arrow {
+    display: none;
+    float: left;
+    font-size: 12px;
+    height: 28px;
+    margin-bottom: -1px;
+    padding-left: 2px;
+    padding-top: 6px;
+    margin-top: 2px;
+    width: 16px;
+    border-radius: 3px;
+    background-color: #ffffff66;
+    border-color: inherit;
+}
+  .scrtabs-tab-scroll-arrow:hover {
+     }
+
+.scrtabs-tab-scroll-arrow,
+.scrtabs-tab-scroll-arrow .scrtabs-click-target {
+  cursor: pointer; }
+
+.scrtabs-tab-scroll-arrow.scrtabs-with-click-target {
+  cursor: default; }
+
+.scrtabs-tab-scroll-arrow.scrtabs-disable,
+.scrtabs-tab-scroll-arrow.scrtabs-disable .scrtabs-click-target {
+  color: #ddd;
+  cursor: default;
+  opacity:0.3;
+}
+
+.scrtabs-tab-scroll-arrow.scrtabs-disable:hover {
+   }
+
+.scrtabs-tabs-fixed-container ul.nav-tabs.tabtheme4 > li {
+  white-space: nowrap;
+  padding: 0px 12px;
+  min-width: 0px;
+  height: 32px !important;
+}
+
+

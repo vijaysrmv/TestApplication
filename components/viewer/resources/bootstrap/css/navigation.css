@@ -1,0 +1,89 @@
+.arrowlefttheme {
+    POSITION: relative;
+    BORDER-TOP: transparent 6px dashed;
+    BORDER-BOTTOM: transparent 6px dashed;
+    BORDER-RIGHT: transparent 0px dashed;
+    BORDER-LEFT: black 6px solid;
+    TOP: 0px;
+    RIGHT: 0px;
+    WIDTH: 0px;
+    HEIGHT: 0px;
+    LINE-HEIGHT: 0;
+    DISPLAY: inline-block;
+    FONT-SIZE: 0px;
+    PADDING-LEFT: 4px;
+}
+ 
+.arrowrighttheme {
+    POSITION: relative;
+    BORDER-TOP: transparent 6px dashed;
+    BORDER-BOTTOM: transparent 6px dashed;
+    BORDER-RIGHT: black 6px solid;
+    BORDER-LEFT: transparent 0px dashed;
+    TOP: 0px;
+    RIGHT: 0px;
+    WIDTH: 0px;
+    HEIGHT: 0px;
+    LINE-HEIGHT: 0;
+    DISPLAY: inline-block;
+    FONT-SIZE: 0px;
+    PADDING-RIGHT: 4px;
+}
+ 
+.arrowleftdistheme {
+    POSITION: relative;
+    BORDER-TOP: transparent 6px dashed;
+    BORDER-BOTTOM: transparent 6px dashed;
+    BORDER-RIGHT: transparent 0px dashed;
+    BORDER-LEFT: #C0C0C0 6px solid;
+    TOP: 0px;
+    RIGHT: 0px;
+    WIDTH: 0px;
+    HEIGHT: 0px;
+    LINE-HEIGHT: 0;
+    DISPLAY: inline-block;
+    FONT-SIZE: 0px;
+    PADDING-LEFT: 4px;
+}
+ 
+.arrowrightdistheme {
+    POSITION: relative;
+    BORDER-TOP: transparent 6px dashed;
+    BORDER-BOTTOM: transparent 6px dashed;
+    BORDER-RIGHT: #C0C0C0 6px solid;
+    BORDER-LEFT: transparent 0px dashed;
+    TOP: 0px;
+    RIGHT: 0px;
+    WIDTH: 0px;
+    HEIGHT: 0px;
+    LINE-HEIGHT: 0;
+    DISPLAY: inline-block;
+    FONT-SIZE: 0px;
+    PADDING-RIGHT: 4px;
+}
+
+ .mandatoryLabel:after{
+    content: " *" !important;
+    color: #E32 !important;
+}
+
+.mandatoryControlCSS{    
+    background-color: #FEE !important;
+}
+.mandatory
+{
+    border-color: #fc5847 !important;
+}
+ 
+.black_overlay{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    z-index:9999999;
+    -moz-opacity: 0.3;
+    opacity:.30;
+    filter: alpha(opacity=30);
+}
